@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="homework.css">
+  <title>Tic-tac-toe</title>
+</head>
+<body>
+<div id="main"></div>
+
+  <div id="game">
+
+    <div class="box_row">
+      <div class="box"><img src="tic.png" class="picture" id="first_row_one" 
+                                                            onclick="play(this.id)"></div>
+      <div class="box"><img src="tic.png" class="picture" id="first_row_two" 
+                                                            onclick="play(this.id)"></div>
+      <div class="box"><img src="tic.png" class="picture" id="first_row_three" 
+                                                            onclick="play(this.id)"></div>
+    </div>
+
+    <div class="box_row">
+      <div class="box"><img src="tic.png" class="picture" id="second_row_one" 
+                                                            onclick="play(this.id)"></div>
+      <div class="box"><img src="tic.png" class="picture" id="second_row_two" 
+                                                            onclick="play(this.id)"></div>
+      <div class="box"><img src="tic.png" class="picture" id="second_row_three" 
+                                                            onclick="play(this.id)"></div>
+    </div>
+
+    <div class="box_row" id="problem">
+      <div class="box"><img src="tic.png" class="picture" id="thirth_row_one" 
+                                                            onclick="play(this.id)"></div>
+      <div class="box"><img src="tic.png" class="picture" id="thirth_row_two" 
+                                                            onclick="play(this.id)"></div>
+      <div class="box"><img src="tic.png" class="picture" id="thirth_row_three" 
+                                                            onclick="play(this.id)"></div>
+    </div>
+
+  </div>
+
+  <form name="form" class="liter">
+    <input type="text" name='first_player' placeholder="First player">
+    <input type="text" name='second_player' placeholder="Second player">
+  </form>
+  <button onclick="start()" class="liter">Registrate</button>
+
+<div id="queue"></div>
+
+<div id="results"></div>
+
+<button id='restart' onclick="restart()">Do you want to play again ?</button>
+
+<form id="restart_again">
+<button >Or do you want to play with another player ?</button>
+</form>
+
+  <script src="homework.js"></script>
+
+</body>
+</html>
